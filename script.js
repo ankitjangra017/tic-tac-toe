@@ -1,6 +1,6 @@
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-const dom = new JSDOM(<!DOCTYPE html><body><div data-cell></div></body>);
+const dom = new JSDOM(`<!DOCTYPE html><body><div data-cell></div></body>`);
 const document = dom.window.document;
 
 const cells = document.querySelectorAll('[data-cell]');
