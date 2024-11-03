@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         player2Name = document.getElementById('player2').value || 'Player 2';
         gameActive = true;
         currentPlayer = 'X';
-        playerTurnText.textContent = ${player1Name}'s turn (X);
+        playerTurnText.textContent = `${player1Name}'s turn (X)`;
         cells.forEach(cell => {
             cell.textContent = '';
             cell.addEventListener('click', handleCellClick, { once: true });
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cell.textContent = currentPlayer;
 
         if (checkWin()) {
-            playerTurnText.textContent = ${currentPlayer === 'X' ? player1Name : player2Name} wins!;
+            playerTurnText.textContent = `${currentPlayer === 'X' ? player1Name : player2Name} wins!`;
             gameActive = false;
             return;
         }
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function switchPlayer() {
         currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-        playerTurnText.textContent = ${currentPlayer === 'X' ? player1Name : player2Name}'s turn (${currentPlayer});
+        playerTurnText.textContent = `${currentPlayer === 'X' ? player1Name : player2Name}'s turn (${currentPlayer})`;
     }
 
     function checkWin() {
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function restartGame() {
         gameActive = true;
         currentPlayer = 'X';
-        playerTurnText.textContent = ${player1Name}'s turn (X);
+        playerTurnText.textContent = `${player1Name}'s turn (X)`;
         cells.forEach(cell => {
             cell.textContent = '';
             cell.addEventListener('click', handleCellClick, { once: true });
