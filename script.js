@@ -7,9 +7,9 @@ const cells = document.querySelectorAll('[data-cell]');
 console.log(cells);
 
 // const cells = document.querySelectorAll('[data-cell]');
-const playerTurnText = document.getElementById('playerTurn');
-const startGameButton = document.getElementById('startGame');
-const restartGameButton = document.getElementById('restartGame');
+const playerTurnText = document.getElementById('playerTurn');console.log(playerTurn);
+const startGameButton = document.getElementById('startGame');console.log(startGame);
+const restartGameButton = document.getElementById('restartGame');console.log(restartGame);
 let player1Name = '';
 let player2Name = '';
 let currentPlayer = 'X';
